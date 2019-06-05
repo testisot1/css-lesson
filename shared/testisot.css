@@ -2,4 +2,30 @@
     height: 100px;
     width: 100px;
     background: red;
+    animation: pulse 2s linear infinite alternate;
+    filter: invert(100%)
 }
+
+@keyframes pulse {
+    from{
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.2);
+    }
+}
+
+body {
+    animation: fade-in 10s;
+}
+
+@keyframes fade-in {
+    from {
+        filter: opacity(0)
+    }   
+    to {
+        filter: opacity(100%)
+
+    }
+}
+
